@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ehcache name="cacheManagerOne" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:noNamespaceSchemaLocation="http://ehcache.org/ehcache.xsd">
+    <diskStore path="data/cacheManagerOne"/>
+    <defaultCache eternal="true" maxEntriesLocalHeap="10" maxElementsOnDisk="1000" overflowToDisk="true" diskPersistent="true"
+                  statistics="true">
+    </defaultCache>
+
+
+    <cache name="cacheOne" maxEntriesLocalHeap="100" maxElementsOnDisk="100000"
+           overflowToDisk="true" diskPersistent="true"/>
+</ehcache>
